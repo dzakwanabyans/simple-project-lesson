@@ -1,0 +1,104 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* STYLE */
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A4C3B2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.calculator {
+    background-color: #CCE3DE;
+    padding: 3vmin;
+    border-radius: 10px;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    margin: 10px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 20px;
+    color: #6B9080;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px #A4C3B2, 5px 5px 15px #A4C3B2;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.calculator form input.right{
+    width: 145px;
+}
+
+.calculator form .display input{
+    font-size: 45px;
+}
+
+form .display input {
+    text-align: right;
+    flex: 1;
+}
+
+form input.button{
+    background-color: #6B9080;
+    color: #CCE3DE;
+}
